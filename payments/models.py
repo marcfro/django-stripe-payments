@@ -872,10 +872,9 @@ class Charge(StripeObject):
             }
             subject = render_to_string("payments/email/subject.txt", ctx)
             subject = subject.strip()
-            message = render_to_string("payments/email/body.txt", ctx)
             num_sent = EmailMessage(
                 subject,
-                message,
+                ("payments/email/body.txt", ctx),
                 to=[self.customer.user.email],
                 from_email=INVOICE_FROM_EMAIL
             ).send()

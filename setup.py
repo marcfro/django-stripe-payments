@@ -108,7 +108,7 @@ NAME = "django-stripe-payments"
 DESCRIPTION = "a payments Django app for Stripe"
 AUTHOR = "Patrick Altman"
 AUTHOR_EMAIL = "paltman@eldarion.com"
-URL = "https://github.com/eldarion/django-stripe-payments"
+URL = "https://github.com/marcfro/django-stripe-payments"
 VERSION = __import__(PACKAGE).__version__
 
 
@@ -136,7 +136,8 @@ setup(
         "django-jsonfield>=0.8",
         "stripe>=1.7.9",
         "django>=1.4",
-        "pytz"
+        "pytz",
+        "django-template-mail==0.1",
     ],
     zip_safe=False,
 )

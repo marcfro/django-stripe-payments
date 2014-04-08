@@ -1,3 +1,5 @@
+Fork of Django Stripe Payments - for use with django-template-mail
+
 ======================
 django-stripe-payments
 ======================
